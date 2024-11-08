@@ -1,0 +1,725 @@
+/* Hoja de Estilos */
+
+/* Importacion Tipografia/s Google @import */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Selector Universal- Cumple la funcion de resetear propiedades que vienen aplicadas por default -Afecta a todo el html- Siempre va a rriba de todo, abajo del @import*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+
+}
+
+
+/* font-size: 1rem;1rem = la unidad absoluta que se establecio en el root y si el root no tiene nada establecido, es lo que tiene establecido el navegador en su configuracion, por defecto 16px*/
+/*
+orden de prioridad del em:
+1- tamaño de fuente definida en el elemento especifico
+2- tamaño de fuente definida en el elemento padre
+3- tamaño de fuente definido en el root o en el navegador.
+
+ejemplo: si a un elemento le coloco 1em
+    <p style="font-size: 1em;">Texto</p>
+si se encuentra dentro de un div, y el div tiene establecido un font-size de 20px entonces el parrafo mide 20px, si el div que envuelve el parrafo no tiene establecido ningun tamano de fuente entonces toma el del navegador que por defecto son 16px
+
+orden de prioridad del rem:
+El rem SIEMPRE se relaciona con la fuente raiz, no con la fuente actual del elemento
+Ejemplo: 
+si el root o el navegador tiene establecido 20px y el parrafo tiene establecido 1.5rem entonces el parrafo va a medir 30px es 1.5 veces el tamaño de la fuente raiz.
+Si en la fuente raiz no se establecio ningun tamaño fijo entonces se toman 16px que es el valor por defecto del navegador.
+
+Cuando usar rem:
+Usa rem para los parrafos(& títulos) para respetar el tamaño que establecio el usuario por defecto en su navegador
+ventajas:accesibilidad, consistencia y flexibilidad. 
+Cuando usar em: 
+Cuando queres que un elemento tenga un tamaño relativo a su padre, 
+por ejemplo queres que todas los hijos de un navegador tengan tamaños relativos a su padre el header, entonces el ancla es cierto porcentaje de lo que el header tiene establecido en su fuente, los iconos igual.
+Ventajas:
+Se ajusta automaticamente a la fuente del padre
+hay una relacion directa entre hijos y padres
+
+*/
+
+/* Selector de Etiquetas */
+
+body {
+    background-color: #FDFDFD;
+    overflow-x: hidden; /* Evita el scroll horizontal en la página */
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #282322;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    color: #282322;
+
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #282322;
+
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1;
+    color: #282322;
+
+}
+
+/* Salto de linea con Span */
+.break{
+    display: block;
+
+}
+
+
+/* Excepciones Tipografia */
+
+.textBold {
+    font-weight: 700;
+}
+
+.textWhite {
+    color: #FDFDFD;
+
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+.textDisplayHero {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.textDisplay {
+    font-size: 3rem;
+    line-height: 1;
+
+}
+
+
+/*Header*/
+.header {
+    width: 100%;
+    background-color: #FDFDFD;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 12px 0px #d1d1d1;
+    overflow-x: hidden; /* Evita el scroll horizontal en la página */
+   
+
+
+    .containerLogo{
+        
+        .logoHeader {
+            width: 100px;
+        }
+
+    }
+  
+
+    .navHeader {
+        padding-left: 20px;
+    
+
+        .ulHeader {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            gap:24px;
+
+            .listItem {
+
+                .linkHeader {
+                    text-decoration: none;
+                    color: #5E5251;
+                    font-size: 2em;
+
+
+                }
+            }
+        }
+    }
+}
+
+/* Hero */
+
+.sectionHero {
+    background-image: url(../assets/img/hero-skincare.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-size: 10px;
+    color: #FDFDFD;
+    padding: 80px 80px 80px 80px;
+    overflow: auto;
+
+
+    .containerTextHero {
+        text-align: left;
+        font-size: 10px;
+        color: #FDFDFD;
+        width: 45%;
+
+        p {
+            font-size: 3em;
+            line-height: 1, 5;
+            margin-bottom: 40px;
+        }
+
+        a {
+            font-weight: 600;
+            text-decoration: none;
+            color: #FDFDFD;
+            font-size: 2em;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+    }
+}
+
+/*Productos Bestseller */
+.bestsellers {
+    margin: 60px 80px 60px 80px;
+
+    .sectionHeadingH2 {
+
+        margin-bottom: 40px;
+        margin-inline: auto;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+
+
+        }
+    }
+
+    .sectionProducto {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .itemProducto {
+
+            display: inline-block;
+            padding-right: 10px;
+            padding-left: 10px;
+
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+
+            img {
+                width: 350px;
+                border-radius: 16px;
+            }
+
+
+
+        }
+
+    }
+}
+
+/* Crea tu Rutina */
+.rutina {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+    .sectionRutinaIzq {
+        background-image: url(../assets/img/jocelyn-morales-JiqTLjzEH18-unsplash.jpg);
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .logoOverlay {
+
+            width: 220px;
+            margin-inline: auto;
+            opacity: 80%;
+            padding-top: 200px;
+
+        }
+
+    }
+
+    .sectionRutinaDer {
+        background-color: #F8E6E4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+        width: 50%;
+        padding: 80px;
+
+        .sectionHeadingRutina {
+            font-size: 10px;
+            width: 70%;
+            margin-inline: auto;
+
+            .textDisplay {
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            p {
+                font-size: 2em;
+                line-height: 1, 5;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+        }
+
+        .btnSecondaryContainer {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+
+
+            .btnSecndaryCont1 {
+                margin: 16px 0;
+
+            }
+
+            .btnSecndaryCont2 {
+                margin: 16px 0;
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+
+
+/*Cuidado Específico */
+.cuidadoCuerpo {
+    margin: 60px 80px 60px 80px;
+
+    .sectionHeadingH2 {
+
+        margin-bottom: 40px;
+        margin-inline: auto;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+
+
+        }
+    }
+
+    .sectionItemsCuerpo {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .itemCuerpo {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 10px;
+
+            img {
+                width: 250px;
+                height: 250px;
+                border-radius: 42px;
+                object-fit: cover;
+            }
+
+        }
+
+    }
+}
+
+
+.footer {
+    font-size: 10px;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sectionTopFooter {
+        background-color: #C88080;
+        color: #282322;
+        width: 100%;
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .headingTopFooter {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .formSuscribe {
+            text-align: center;
+        }
+    }
+
+    .sectionBodyFooter {
+        width: 100%;
+        background-color: #282322;
+        color: #B5AFAD;
+        padding: 30px 60px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .containerLogoFooter {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+
+            .logoFooter {
+                width: 100px;
+            }
+        }
+
+        .mapaSitioFooter,
+        .itemsSitioFooter,
+        .contactoFooter {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Centrando el contenido en cada columna */
+            text-align: left;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    a {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: #B5AFAD;
+                        font-size: 1.5em;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+
+        .redesFooter {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                gap: 16px;
+                /* Espacio entre los iconos */
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #B5AFAD;
+                        font-size: 1.5em;
+
+                        .fa-instagram,
+                        .fa-tiktok,
+                        .fa-facebook {
+                            font-size: 1.5em;
+                            color: #B5AFAD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionBottomFooter {
+        background-color: #282322;
+        color: #B5AFAD;
+        width: 100%;
+        padding: 10px 60px;
+        text-align: center;
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+    }
+
+    .fa-whatsapp {
+        font-size: 3em;
+        color: #FDFDFD;
+        background-color: #25d366;
+        padding: 0.6em;
+        border-radius: 100%;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+
+
+
+/* Button Primary Filled */
+
+.btnPrimary {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: #FDFDFD;
+    background-color: #DB9191;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.btnPrimary:hover {
+    background-color: #C88080;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnPrimary:focus {
+    outline: 2px solid #DB9191;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+
+
+/* Button Primary */
+
+.btnPrimaryGhost {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: #DB9191;
+    background-color: #FDFDFD;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.btnPrimaryGhost:hover {
+    background-color: #FDFDFD;
+    border-color: #DB9191;
+    border-width: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnPrimaryGhost:focus {
+    outline: 2px solid #DB9191;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+
+
+/* Boton Secondary */
+
+.btnSecondary {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: #FDFDFD;
+    background-color: #282322;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btnSecondary:hover {
+    background-color: #433B39;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnSecondaryOutlined {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 20px 30px;
+    color: #282322;
+    border: 2px solid #282322;
+    border-radius: 50px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btnSecondaryOutlined:hover {
+    background-color: #deccca;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.001);
+}
+
+
+
+/* Tienda */
+
+.sectionHeadingH1 {
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-inline: auto;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+
+    }
+}
+
+
+
+
+/* Carrito */
+
+
+
+
+/* Contacto */
+
+/*Formulario Formspree*/
+.formContainer {
+
+    background-color: #fff;
+    padding: top 10px; bottom: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+    margin-inline: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #666;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #604444;
+}

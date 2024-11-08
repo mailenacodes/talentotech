@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda LENA | Skincare</title>
+    <!-- script iconos fontawesome -->
+  <script src="https://kit.fontawesome.com/9c062008ce.js" crossorigin="anonymous"></script>
+  <!-- link a estilos CSS/ siempre va abajo de links de terceros-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <!-- favicon icono-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo -->
+         <!-- metemos el logo en un div, para hacerlo contenedor hno de la nav, y poder aplicarles flexbox -->
+        <div class="containerLogo"> 
+          <a href="../index.html">
+            <img class="logoHeader" src="../assets/img/lena-logo.png" alt="Logo tipográfico de la marca" loading="lazy">
+          </a>
+        </div>
+        <!-- Navigation -->
+        <nav class="navHeader">
+          <ul class="ulHeader">
+            <li class="listItem"><a class="linkHeader" href="../index.html ">Inicio</a></li>
+            <li class="listItem"><a class="linkHeader" href="../pages/tienda.html">Tienda</a></li>
+            <li class="listItem"><a class="linkHeader" href="../pages/contacto.html">Contacto</a></li>
+            <!-- <li><a href="./pages/carrito.html">Carrito</a></li> -->
+            <li class="listItem"><a class="linkHeader" href="../pages/carrito.html"><i
+                  class="fa-solid fa-cart-shopping"></i></a></li>
+    
+            <!--target="_blank" solo se usa cuando tenemos rutas absolutas 
+                    es decir el ancla o el link nos lleva fuera de nuestro sitio web y necesitamos que nuestro sitio web siga abierto en el navegador
+                    -->
+            <!-- <li><a href="https://www.google.com/?hl=es" target="_blank">Google</a></li> -->
+          </ul>
+        </nav>
+      </header>
+    
+    <main class="mainTienda">
+
+        <section class="sectionTienda">
+            <div class="sectionHeadingH1"> 
+                <h1 class="sectionHeadingH1">Tienda</h1>
+                <p>Encontrá el mejor skincare para tu piel</p>
+            </div>
+        </section>
+       
+    
+    </main>
+
+     <footer class="footer">
+    <!-- Suscribite - Top Footer  -->
+    <section class="sectionTopFooter">
+      <div class="headingTopFooter">
+        <h3>Unite a LenaClub</h3>
+        <h4>Suscribite y enterate de todas las novedades y los beneficios</h4>
+      </div>
+
+      <form action="" class="formSuscribe">
+        <input type="email" placeholder="Tu correo electrónico" id="emailSus" name="emailSus">
+        <input type="submit" value="Suscribirse">
+      </form>
+    </section>
+
+    <!-- Resto del footer, en columnas -->
+    <section class="sectionBodyFooter">
+      <!-- Logo -->
+      <section class="containerLogoFooter">
+       <div class="logoFooter">
+        <a href="../index.html">
+          <img src="../assets/img/footer-logo1.png" alt="Logo tipográfico de la marca">
+        </a>
+       </div> 
+      </section>
+
+      <!-- Links Sitio -->
+      <nav class="mapaSitioFooter">
+        <ul>
+          <li><a href="../index.html" class="linksFooter">Inicio</a></li>
+          <li><a href="../pages/tienda.html" class="linksFooter">Tienda</a></li>
+          <li><a href="../pages/contacto.html" class="linksFooter">Contacto</a></li>
+          <li><a href="../pages/carrito.html" class="linksFooter">Carrito</a></li>
+      </nav>
+
+      <nav class="itemsSitioFooter">
+        <ul>
+          <li><a href="">Sobre Nosotros</a></li>
+          <li><a href="">Política de Privacidad</a></li>
+          <li><a href="">Términos y Condiciones</a></li>
+          <li><a href="">Preguntas Frecuentes</a></li>
+        </ul>
+      </nav>
+
+      <!-- Datos de Contacto -->
+      <nav class="contactoFooter">
+        <ul>
+          <li><a href=""><span class="textBold">Nuestro Local</span> Av. Corrientes 3940</a></li>
+          <li><a href=""><span class="textBold">Dirección de Correo</span> hola@lena.com</a></li>
+          <li><a href=""><span class="textBold">Télefono</span> +54 11 6798 9000</a></li>
+       
+        </ul>
+      </nav>
+
+      <!-- Redes Sociales -->
+      <nav class="redesFooter">
+        <ul>
+          <!-- instagram -->
+          <li><a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram iconosRedes"></i></a></li>
+          <!-- tiktok -->
+          <li><a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok iconosRedes"></i>
+            </a></li>
+          <!-- facebook -->
+          <li><a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook iconosRedes"></i>
+            </a></li>
+        </ul>
+      </nav>
+    </section>
+
+      <!-- Copyright -->
+      <section class="sectionBottomFooter">
+        <p>Copyright © 2024 <span class="textBold">Lena Skincare |</span> Todos los derechos reservados.</p>
+      
+      </section>
+
+      <!--enlace interno que me lleve al header / por eso le asignamos <section id="header">
+    <li><a href="#header">Ir Arriba</a></li>
+     -->
+         <!-- FAB Whatsapp -->
+      <div class="fabWhatsapp">
+        <a href="https://www.whatsapp.com/" target="_blank"> <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+  </footer>
+</body>
+
+</html>
