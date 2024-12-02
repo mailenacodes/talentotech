@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tienda LENA | Skincare</title>
-    <!-- script iconos fontawesome -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tienda LENA | Skincare</title>
+  <!-- script iconos fontawesome -->
   <script src="https://kit.fontawesome.com/9c062008ce.js" crossorigin="anonymous"></script>
   <!-- link a estilos CSS/ siempre va abajo de links de terceros-->
   <link rel="stylesheet" href="../css/estilos.css">
@@ -14,45 +14,244 @@
 </head>
 
 <body>
-    <header class="header">
-        <!-- Logo -->
-         <!-- metemos el logo en un div, para hacerlo contenedor hno de la nav, y poder aplicarles flexbox -->
-        <div class="containerLogo"> 
-          <a href="../index.html">
-            <img class="logoHeader" src="../assets/img/lena-logo.png" alt="Logo tipográfico de la marca" loading="lazy">
-          </a>
-        </div>
-        <!-- Navigation -->
-        <nav class="navHeader">
-          <ul class="ulHeader">
-            <li class="listItem"><a class="linkHeader" href="../index.html ">Inicio</a></li>
-            <li class="listItem"><a class="linkHeader" href="../pages/tienda.html">Tienda</a></li>
-            <li class="listItem"><a class="linkHeader" href="../pages/contacto.html">Contacto</a></li>
-            <!-- <li><a href="./pages/carrito.html">Carrito</a></li> -->
-            <li class="listItem"><a class="linkHeader" href="../pages/carrito.html"><i
-                  class="fa-solid fa-cart-shopping"></i></a></li>
-    
-            <!--target="_blank" solo se usa cuando tenemos rutas absolutas 
+  <header class="header">
+    <!-- Logo -->
+    <!-- metemos el logo en un div, para hacerlo contenedor hno de la nav, y poder aplicarles flexbox -->
+    <div class="containerLogo">
+      <a href="../index.html">
+        <img class="logoHeader" src="../assets/img/lena-logo.png" alt="Logo tipográfico de la marca" loading="lazy">
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navHeader">
+      <ul class="ulHeader">
+        <li class="listItem"><a class="linkHeader" href="../index.html ">Inicio</a></li>
+        <li class="listItem"><a class="linkHeader" href="../pages/tienda.html">Tienda</a></li>
+        <li class="listItem"><a class="linkHeader" href="../pages/contacto.html">Contacto</a></li>
+        <!-- <li><a href="./pages/carrito.html">Carrito</a></li> -->
+        <li class="listItem"><a class="linkHeader" href="../pages/carrito.html"><i
+              class="fa-solid fa-cart-shopping"></i></a></li>
+
+        <!--target="_blank" solo se usa cuando tenemos rutas absolutas 
                     es decir el ancla o el link nos lleva fuera de nuestro sitio web y necesitamos que nuestro sitio web siga abierto en el navegador
                     -->
-            <!-- <li><a href="https://www.google.com/?hl=es" target="_blank">Google</a></li> -->
-          </ul>
-        </nav>
-      </header>
-    
-    <main class="mainTienda">
+        <!-- <li><a href="https://www.google.com/?hl=es" target="_blank">Google</a></li> -->
+      </ul>
+    </nav>
+  </header>
 
-        <section class="sectionTienda">
-            <div class="sectionHeadingH1"> 
-                <h1 class="sectionHeadingH1">Tienda</h1>
-                <p>Encontrá el mejor skincare para tu piel</p>
+  <main class="tienda">
+
+    <section class="sectionHeadingH1">
+      <h1 class="sectionHeadingH1">Tienda</h1>
+      <p>Encontrá el mejor skincare para tu piel</p>
+    </section>
+
+    <!-- Seccion que abarca las tres o cuatro categorias -->
+
+    <section class="categoriasTienda">
+
+      <!-- Categoria Uno -->
+      <section class="containerCategoria">
+
+
+        <!-- Titulo categoria Uno -->
+        <div class="categoriaHeading">
+          <h2 class="textAlignLeft">Serums</h2>
+          <a href="../pages/tienda.html" button class="btnSecondaryOutlined btnSecondaryOutlinedSpecial" type="button">
+            <i class="fas fa-plus" style="padding-right: 6px;"></i> Ver Más Productos
+          </a>
+        </div>
+
+        <!-- Fila Categoria Uno | Cards  -->
+        <section class="tarjetasCategoria">
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 1/serumMatcha.jpg" alt="Producto 1">
+            <div class="textoTarjeta">
+              <h3>Serum Matcha</h3>
+              <h4>Con Té Verde + Péptidos</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $28.499,00</a>
             </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 1/serum-yellow.jpg" alt="Producto 2">
+            <div class="textoTarjeta">
+              <h3>Serum Multibiotic</h3>
+              <h4>Con Probióticos</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $18.299,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 1/serum-pink.jpg" alt="Producto 3">
+            <div class="textoTarjeta">
+              <h3>Serum Hidratante</h3>
+              <h4>Con Vit C + Papaya</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $21.499,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 1/serum-green.jpg" alt="Producto 4">
+            <div class="textoTarjeta">
+              <h3>Serum Biotina</h3>
+              <h4>Con Aminoácidos</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $25.499,00</a>
+            </div>
+          </div>
+          <!-------------------------------------------->
         </section>
-       
-    
-    </main>
 
-     <footer class="footer">
+
+        
+        <!-- Titulo categoria Dos -->
+        <div class="categoriaHeading">
+          <h2 class="textAlignLeft">Tónicos</h2>
+          <a href="../pages/tienda.html" button class="btnSecondaryOutlined btnSecondaryOutlinedSpecial" type="button">
+            <i class="fas fa-plus" style="padding-right: 6px;"></i> Ver Más Productos
+          </a>
+        </div>
+
+        <!-- Fila Categoria Dos | Cards  -->
+        <section class="tarjetasCategoria">
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 2/tonico-1.jpeg" alt="Producto 1">
+            <div class="textoTarjeta">
+              <h3>Tónico Hidra </h3>
+              <h4>Con Rosa Mosqueta</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $30.499,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 2/tonico-2.jpeg" alt="Producto 2">
+            <div class="textoTarjeta">
+              <h3>Tónico Clean</h3>
+              <h4>Con Arándanos & kale</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $40.000,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 2/tonico-3.jpeg" alt="Producto 3">
+            <div class="textoTarjeta">
+              <h3>Tónico Brown Bee</h3>
+              <h4>Con Vit E</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $41.499,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 2/tonico-4.jpg" alt="Producto 4">
+            <div class="textoTarjeta">
+              <h3>Tónico DayDreamer</h3>
+              <h4>Con Oleoplex</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $35.999,00</a>
+            </div>
+          </div>
+          <!-------------------------------------------->
+        </section>
+
+
+        <!-- Titulo categoria Tres -->
+        <div class="categoriaHeading">
+          <h2 class="textAlignLeft">Masks</h2>
+          <a href="../pages/tienda.html" button class="btnSecondaryOutlined btnSecondaryOutlinedSpecial" type="button">
+            <i class="fas fa-plus" style="padding-right: 6px;"></i> Ver Más Productos
+          </a>
+        </div>
+
+        <!-- Fila Categoria Tres | Cards  -->
+        <section class="tarjetasCategoria">
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 3/facemask-1.jpg" alt="Producto 1">
+            <div class="textoTarjeta">
+              <h3>Foot Mask</h3>
+              <h4>Con Acido Glicólico</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $8.499,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 3/facemask-2.jpeg" alt="Producto 2">
+            <div class="textoTarjeta">
+              <h3>Face Mask After Party</h3>
+              <h4>Detox</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $5.299,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 3/facemask-3.jpeg" alt="Producto 3">
+            <div class="textoTarjeta">
+              <h3>Face Mask Nourished</h3>
+              <h4>Con Acido Hialurónico</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $6.499,00</a>
+            </div>
+          </div>
+          <!----------------- Card ----------------->
+          <div class="tarjetaProducto">
+            <img src="../assets/img/tienda/categoria 3/facemask-4.jpeg" alt="Producto 4">
+            <div class="textoTarjeta">
+              <h3>Face Mask High Protein</h3>
+              <h4>Con Arginina</h4>
+              <!-- Button -->
+              <a href="../pages/carrito.html" title="Añadir a Carrito" class="btnPrimary textBold full-width-btn">Añadir
+                al Carrito por $4.499,00</a>
+            </div>
+          </div>
+          <!-------------------------------------------->
+        </section>
+
+
+
+
+      </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+  <footer class="footer">
     <!-- Suscribite - Top Footer  -->
     <section class="sectionTopFooter">
       <div class="headingTopFooter">
@@ -62,7 +261,7 @@
 
       <form action="" class="formSuscribe">
         <input type="email" placeholder="Tu correo electrónico" id="emailSus" name="emailSus">
-        <input type="submit" value="Suscribirse">
+        <input type="button" class="btnSuscribe" value="Suscribirse">
       </form>
     </section>
 
@@ -70,11 +269,11 @@
     <section class="sectionBodyFooter">
       <!-- Logo -->
       <section class="containerLogoFooter">
-       <div class="logoFooter">
-        <a href="../index.html">
-          <img src="../assets/img/footer-logo1.png" alt="Logo tipográfico de la marca">
-        </a>
-       </div> 
+        <div class="logoFooter">
+          <a href="../index.html">
+            <img src="../assets/img/footer-logo1.png" alt="Logo tipográfico de la marca">
+          </a>
+        </div>
       </section>
 
       <!-- Links Sitio -->
@@ -101,7 +300,7 @@
           <li><a href=""><span class="textBold">Nuestro Local</span> Av. Corrientes 3940</a></li>
           <li><a href=""><span class="textBold">Dirección de Correo</span> hola@lena.com</a></li>
           <li><a href=""><span class="textBold">Télefono</span> +54 11 6798 9000</a></li>
-       
+
         </ul>
       </nav>
 
@@ -123,20 +322,20 @@
       </nav>
     </section>
 
-      <!-- Copyright -->
-      <section class="sectionBottomFooter">
-        <p>Copyright © 2024 <span class="textBold">Lena Skincare |</span> Todos los derechos reservados.</p>
-      
-      </section>
+    <!-- Copyright -->
+    <section class="sectionBottomFooter">
+      <p>Copyright © 2024 <span class="textBold">Lena Skincare |</span> Todos los derechos reservados.</p>
 
-      <!--enlace interno que me lleve al header / por eso le asignamos <section id="header">
+    </section>
+
+    <!--enlace interno que me lleve al header / por eso le asignamos <section id="header">
     <li><a href="#header">Ir Arriba</a></li>
      -->
-         <!-- FAB Whatsapp -->
-      <div class="fabWhatsapp">
-        <a href="https://www.whatsapp.com/" target="_blank"> <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
+    <!-- FAB Whatsapp -->
+    <div class="fabWhatsapp">
+      <a href="https://www.whatsapp.com/" target="_blank"> <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
   </footer>
 </body>
 
