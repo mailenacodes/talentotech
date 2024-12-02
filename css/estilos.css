@@ -217,28 +217,32 @@ h4 {
         flex-direction: column;
         text-align: center;
         font-size: 10px;
+
+        .textDisplayHero {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .containerTextHero {
+            width: 100%;
+            text-align: left;
+            padding-right: 300px;
+
+            p {
+                font-size: 2em;
+                line-height: 1;
+                margin-bottom: 20px;
+                text-align: left;
+
+                a {
+                    font-size: 0.1em;
+                }
+            }
+        }
     }
 
-    .containerTextHero {
-        width: 100%;
-        text-align: center;
-    }
-
-    .containerTextHero p {
-        font-size: 0.2em;
-        line-height: 1;
-        margin-bottom: 20px;
-    }
-
-    .containerTextHero a {
-        font-size: 1.5em;
-        margin-bottom: 30px;
-    }
-
-    .textDisplayHero {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
+    
+    
 }
 
 @media (max-width: 480px) {
@@ -249,7 +253,7 @@ h4 {
     }
 
     .containerTextHero p {
-        font-size: 0.5em;
+        font-size: 0.1em;
         margin-bottom: 15px;
     }
 
@@ -372,6 +376,9 @@ h4 {
 }
 
 .sectionRutinaDer .sectionHeadingRutina .textDisplay {
+
+    font-size: 3rem;
+    line-height: 1;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -379,7 +386,7 @@ h4 {
 .sectionRutinaDer .sectionHeadingRutina p {
     font-size: 2em;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     text-align: left;
 }
 
@@ -389,20 +396,28 @@ h4 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 16px;
+    gap: 32px;
 }
 
 .sectionRutinaDer .btnSecondaryContainer .btnSecndaryCont1,
 .sectionRutinaDer .btnSecondaryContainer .btnSecndaryCont2 {
-    margin: 16px 0;
+    margin: 0px 0;
 }
 
-/* Sección Rutina - Media Queries */
-@media (max-width: 768px) {
+/* MEDIAQUERIES RUTINA */
+
+@media (max-width: 1200px) {
     .rutina {
         flex-direction: column;
+        font-size: 10px;
     }
 
+    .sectionRutinaDer .sectionHeadingRutina .textDisplay {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-align: left;
+    }
     .sectionRutinaIzq,
     .sectionRutinaDer {
         width: 100%;
@@ -414,30 +429,141 @@ h4 {
     }
 
     .sectionRutinaDer .sectionHeadingRutina p {
-        font-size: 1.5em;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    .sectionRutinaDer .btnSecondaryContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+      
+    }
+    
+    
+}
+
+@media (max-width: 992px) {
+    .rutina {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .sectionRutinaIzq,
+    .sectionRutinaDer {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .sectionRutinaDer {
+        padding: 40px;
+    }
+    .sectionRutinaDer .sectionHeadingRutina .textDisplay {
+        font-size: 2.2rem;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .sectionRutinaDer .sectionHeadingRutina p {
+        font-size: 1.8em;
+        margin-bottom: 16px;
+    }
+    .sectionRutinaDer .btnSecondaryContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+      
+
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .rutina {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .sectionRutinaIzq,
+    .sectionRutinaDer {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .sectionRutinaDer {
+        padding: 40px;
+    }
+    .sectionRutinaDer .sectionHeadingRutina .textDisplay {
+        font-size: 2.3rem;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .sectionRutinaDer .sectionHeadingRutina p {
+        font-size: 1.3em;
+        margin-bottom: 8px;
     }
 }
 
 @media (max-width: 480px) {
+    .rutina {
+        flex-direction: column;
+        font-size: 10px;
+    }
     .sectionRutinaIzq .logoOverlay {
         width: 180px;
         padding-top: 100px;
     }
 
     .sectionRutinaDer .sectionHeadingRutina p {
-        font-size: 1.2em;
+        font-size: 1.3em;
         line-height: 1.4;
+        margin-bottom: 8px;
     }
 
     .sectionRutinaDer {
-        padding: 20px;
+        padding: 12px;
     }
 
 }
 
+.sectionRutinaDer .sectionHeadingRutina .textDisplay {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
 
-/*Cuidado Específico */
+.sectionRutinaDer .btnSecondaryContainer .btnSecondary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:12px;
+    height: initial;
+    padding: 16px 20px;
+    font-size: 1.4em;
+}
+
+.sectionRutinaDer .btnSecondaryContainer .btnSecondaryOutlined{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:12px;
+    height: initial;
+    padding: 16px 20px;
+    font-size: 1.4em;
+}
+/* ______________________________________ */
+
+
+
+
+/* Cuidado Específico */
 .cuidadoCuerpo {
     margin: 60px 80px 60px 80px;
 
@@ -633,7 +759,7 @@ h4 {
     }
 }
 
-/* MEDIAQUERIES FOOTER 992px*/
+/* MEDIAQUERIES FOOTER */
 
 @media screen and (max-width: 992px) {
     .footer {
@@ -721,7 +847,6 @@ h4 {
     }
 }
 
-/* MEDIAQUERIES FOOTER  768px*/
 
 @media screen and (max-width: 768px) {
     .footer {
@@ -809,6 +934,91 @@ h4 {
     }
 }
 
+/* ______________________________________ */
+
+
+
+
+
+/* Tienda */
+
+.sectionHeadingH1 {
+
+    margin-top: 60px;
+    /* margin-bottom: 10px; */
+    margin-inline: auto;
+
+    h1 {
+        margin-bottom: 4px;
+    }
+
+    p {
+        text-align: center;
+
+    }
+}
+
+
+.categoriasTienda {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .containerCategoria {
+        margin: 20px 60px 20px 60px;
+
+        .categoriaHeading {
+            font-size: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+
+        .tarjetasCategoria {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 24px;
+            justify-content: space-between;
+            margin: 0 auto;
+
+
+            .tarjetaProducto {
+                img {
+                    width: 330px;
+                    height: auto;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+
+                box-shadow: 0px 0px 6px 1px #d6d6d6da;
+                border-radius: 20px;
+
+                h3 {
+                    margin-bottom: 4px;
+                }
+
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                .textoTarjeta {
+                    margin: 12px;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Carrito */
 
 
 
@@ -816,7 +1026,56 @@ h4 {
 
 
 
-/* Botones */
+
+
+/* Contacto */
+
+/*Formulario Formspree*/
+.formContainer {
+
+    background-color: #fff;
+    padding: top 10px;
+    bottom: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #666;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #604444;
+}
+
+
+/* BOTONES */
 
 .full-width-btn {
     display: flex;
@@ -987,139 +1246,4 @@ h4 {
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
-
-
-
-}
-
-
-
-
-/* Tienda */
-
-.sectionHeadingH1 {
-
-    margin-top: 60px;
-    /* margin-bottom: 10px; */
-    margin-inline: auto;
-
-    h1 {
-        margin-bottom: 4px;
-    }
-
-    p {
-        text-align: center;
-
-    }
-}
-
-
-.categoriasTienda {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    .containerCategoria {
-        margin: 20px 60px 20px 60px;
-
-        .categoriaHeading {
-            font-size: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 40px;
-            margin-bottom: 24px;
-        }
-
-        .tarjetasCategoria {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            gap: 24px;
-            justify-content: space-between;
-            margin: 0 auto;
-
-
-            .tarjetaProducto {
-                img {
-                    width: 330px;
-                    height: auto;
-                    object-fit: cover;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
-
-                box-shadow: 0px 0px 6px 1px #d6d6d6da;
-                border-radius: 20px;
-
-                h3 {
-                    margin-bottom: 4px;
-                }
-
-                h4 {
-                    margin-bottom: 10px;
-                }
-
-                .textoTarjeta {
-                    margin: 12px;
-
-                }
-            }
-        }
-    }
-}
-
-
-
-/* Carrito */
-
-
-
-
-/* Contacto */
-
-/*Formulario Formspree*/
-.formContainer {
-
-    background-color: #fff;
-    padding: top 10px;
-    bottom: 20px;
-    width: 300px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
-    border-radius: 8px;
-    text-align: center;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-}
-
-
-.formContacto {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    color: #666;
-}
-
-input,
-textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #604444;
 }
