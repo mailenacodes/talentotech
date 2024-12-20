@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto LENA | Skincare</title>
   <script src="https://kit.fontawesome.com/9c062008ce.js" crossorigin="anonymous"></script>
+  
+
+<!-- Bootstrap (lo utilice solo para Form Contacto) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <!-- link a estilos CSS/ siempre va abajo de links de terceros-->
   <link rel="stylesheet" href="../css/estilos.css">
   <!-- favicon icono-->
@@ -49,99 +54,32 @@
             Te responderemos a la brevedad.
         </p>
       </div>
-    
-<div class="formContainer">
 
-    <form class="formContacto" action="https://formspree.io/f/manyqbdd" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-      
-      <button class="btnPrimary" submit">Enviar</button>
-  </form>
-</div>
+<!-- Formulario Boostrap -->
+<section class="formContainer">
+<form action="" class="row w-10" id="miFormulario">
+  <div class="col-6 mt-3">
+      <label class="form-label" for="nombre">Nombre Completo:</label>
+      <input class="form-control" type="text" id="nombre" name="nombre">
+      <small class="text-danger d-none" id="errorNombre">El nombre es obligatorio.</small>
+  </div>
+  <div class="col-6 mt-3">
+      <label class="form-label" for="email">Email:</label>
+      <input class="form-control" type="email" id="email" name="email">
+      <small class="text-danger d-none" id="errorEmail">Ingrese un email válido.
+      </small>
+  </div>
+  <div class="col-12 mt-3">
+      <label class="form-label" for="mensaje">Mensaje:</label>
+      <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
+      <small class="text-danger d-none" id="errorMensaje">El mensaje debe tener al menos 10 caracteres.</small>
+  </div>
+  <div class="mt-3 col-12">
+      <input class="btn btnPrimary full-width-btn" type="submit" value="Enviar">
+  </div>
+</form>
 </section>
-
-    <!-- <form action="">
-            <div>
-                <label for="nombre">Nombre:
-                    <input type="text" placeholder="Ingrese su Nombre completo" required name="nombre" id="nombre">
-                </label>
-            </div>
-            <div>
-                <label for="apellido">Apellido:
-                    <input type="text" placeholder="Ingrese su Apellido" required name="apellido" id="apellido">
-                </label>
-            </div>
-            <div>
-                <label for="pass">Contraseña:
-                    <input type="password" placeholder="Ingrese un password de 8 digitos" required name="pass"
-                        id="pass">
-                </label>
-            </div>
-            <div>
-                <label for="email">Email:
-                    <input type="email" name="email" id="email" required placeholder="Ingrese un email valido">
-                </label>
-            </div>
-            <div>
-                <label for="provincia">Ingrese en que provincia vive:
-                    <select name="provincia" id="provincia">
-                        <option value="1">Buenos Aires</option>
-                        <option value="2" selected>Capital Federal</option>
-
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label for="telefono">Teléfono:
-                    <input type="tel" placeholder="Ingrese su número telefónico" required name="telefono" id="telefono">
-                </label>
-            </div>
-            <div>
-                <h3 for="">Indique que Lenguajes de programacion conoce:</h3>
-
-                <label for="python">
-                    <input type="checkbox" name="lenguajes" id="python" value="Python">
-                    Python
-                </label>
-                <input type="checkbox" name="lenguajes" id="java" value="Java">
-                <label for="java">Java</label>
-                <input type="checkbox" name="lenguajes" id="c" value="C">
-                <label for="c">C</label>
-                <input type="checkbox" name="lenguajes" id="javascript" value="JavaScript">
-                <label for="javascript">JavaScript</label>
-                <input type="checkbox" name="lenguajes" id="ruby" value="Ruby">
-                <label for="ruby">Ruby</label>
-                <input type="checkbox" name="lenguajes" id="php" value="PHP">
-                <label for="php">PHP</label>
-
-
-            </div>
-            <div>
-                <h3> Elegi mascota</h3>
-
-                <label for="pero">
-                    <input type="radio" name="mascota" id="perro" value="perro"> Perro
-                </label>
-
-                <label for="gato">
-                    <input type="radio" name="mascota" id="gato" value="gato"> Gato
-                </label>
-            </div>
-            <br>
-            <div>
-                <input type="submit" value="enviar formulario">
-                <br>
-                <br>
-                <input type="reset" value="limpiar todo">
-            </div>
-        </form> -->
+</section>
   </main>
 
   <footer class="footer">
@@ -230,6 +168,11 @@
       </a>
     </div>
   </footer>
-</body>
 
+  <!-- Javascript validación Formulario -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/validacion.js">
+  </script>
+
+</body>
 </html>

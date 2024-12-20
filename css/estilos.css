@@ -1029,30 +1029,29 @@ h4 {
 
 
 /* Contacto */
-
-/*Formulario Formspree*/
 .formContainer {
-
-    background-color: #fff;
-    padding: top 10px;
-    bottom: 20px;
-    width: 300px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
+    font-weight: 10px;
+    padding: 10px;
+    margin: 0 auto; /* Centra horizontalmente */
+    max-width: 600px; /* Controla el ancho del contenedor */
     border-radius: 8px;
-    text-align: center;
-    margin-inline: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: center; /* Centrar el contenido verticalmente */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    
+}
 
+#miFormulario {
+    width: 100%; /* Asegura que las columnas respeten el contenedor */
+    margin: 24px 24px 48px 24px;
 }
 
 
+/* 
 .formContacto {
     display: flex;
     flex-direction: column;
-}
+} */
 
 label {
     margin-top: 10px;
