@@ -1020,12 +1020,36 @@ h4 {
 
 /* Carrito */
 
+.sectionTabla {
+    font-weight: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Centrar el contenido verticalmente */
+    justify-content:flex-start;
+
+}
+
+#miTabla {
+    width: 100%; /* Asegura que las columnas respeten el contenedor */
+    margin: 24px 64px 24px 64px;
+}
 
 
+@media all and (max-width: 699px) {
+
+    #miTabla {
+        margin: 24px 16px 24px 16px;
+    }
+ }
 
 
-
-
+@media all and (max-width: 500px) {
+    #miTabla {
+        margin: 24px 8px 24px 8px;
+    }
+ }
 
 
 /* Contacto */

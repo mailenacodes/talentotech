@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrito LENA | Skincare</title>
   <script src="https://kit.fontawesome.com/9c062008ce.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- link a estilos CSS/ siempre va abajo de links de terceros-->
   <link rel="stylesheet" href="../css/estilos.css">
   <!-- favicon icono-->
@@ -42,72 +43,28 @@
   <main class="mainCarrito">
 
     <section class="sectionCarrito">
-
       <div class="sectionHeadingH1">
         <h1>Mi Carrito</h1>
         <p>Productos en el carrito</p>
-
       </div>
-
-
     </section>
 
-
-
-
-
-    <!-- etiqueta tabla -->
-    <table>
-      <!-- etiqueta header/cabecera tabla> -->
+    <section class="sectionTabla" id="miTabla">
+    <table class="table">
       <thead>
-        <!-- fila cabecera tabla -->
-        <tr>
-          <!-- celdas de los titulos de la cabecera -->
-          <th>Producto</th>
-          <th>Precio</th>
-          <th>Cantidad</th>
-          <th>Subtotal</th>
-          <th>Total</th>
-        </tr>
+          <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+          </tr>
       </thead>
-      <!-- etiqueta para cuerpos de la tabla -->
-      <tbody>
-        <!-- etiqueta para filas de la tabla, en este ej. hay 4 filas -->
-        <tr>
-          <td>Serum Oxy</td>
-          <td>15 usd</td>
-          <td>2</td>
-          <td>30 usd</td>
-        </tr>
-
-        <tr>
-          <td>Serum Niacimida</td>
-          <td>25 usd</td>
-          <td>1</td>
-          <td>25 usd</td>
-        </tr>
-
-        <tr>
-          <td>Serum 10%</td>
-          <td>10 usd</td>
-          <td>3</td>
-          <td>30 usd</td>
-        </tr>
-
-        <tr>
-          <td>Serum Lumina</td>
-          <td>15 usd</td>
-          <td>2</td>
-          <td>30 usd</td>
-        </tr>
+      <tbody id="tablaCarrito">
+          <!-- Filas dinámicas -->
       </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="4">Total</td>
-          <td>50 usd</td>
-        </tr>
-      </tfoot>
-    </table>
+  </table>
+  <div class="mt-3">
+      <h3>Total: $<span id="totalCarrito">0.000</span></h3>
+  </div>
+</section>
 
   </main>
 
@@ -197,6 +154,10 @@
       </a>
     </div>
   </footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../js/mostrar_carrito.js"></script>
 
 </body>
 
